@@ -2,6 +2,9 @@
   --blue: #141422;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   padding: 0;
   background-color: #1a1a2a;
@@ -26,6 +29,7 @@ strong {
 a {
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 .menu {
   font-size: 25px;
@@ -299,8 +303,11 @@ a {
 }
 
 .skills_box i {
-  font-size: 40px;
-  color: #1a1a2a;
+  font-size: 30px;
+  color: hsl(229, 82%, 45%);
+  padding: 15px;
+  border-radius: 500px;
+  background-color: #f4f4f4;
 }
 
 .skills_box h1 {
