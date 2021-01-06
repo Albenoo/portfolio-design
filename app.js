@@ -17,6 +17,12 @@ toggle.addEventListener("click", () => {
     toggle.innerHTML = "🍔";
   }
   nav.style.transition = "1s linear";
+
+  if (toggle) {
+    console.log("You successfully open navbar");
+  } else {
+    console.log("Try Again!");
+  }
 });
 
 window.addEventListener("scroll", () => {

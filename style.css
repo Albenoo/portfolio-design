@@ -739,11 +739,10 @@ newyear {
   .menu {
     display: flex;
     cursor: pointer;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
   }
   .navbar_row {
     display: flex !important;
+
     flex-direction: column !important;
     flex-wrap: nowrap !important;
   }
@@ -751,11 +750,27 @@ newyear {
     flex-direction: column !important;
     background-color: var(--bluecolor);
     padding: 20px 0;
-    width: 100%;
+    width: 100% !important;
     display: none;
   }
 
   .navbar_links li {
     padding: 30px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: calc(100% - 30px);
+  }
+  .container_box {
+    display: flex !important;
+    padding: 0 15px;
+    align-items: center !important;
+    flex-direction: column !important;
+    justify-content: center !important;
   }
 }
