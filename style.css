@@ -1,12 +1,21 @@
 :root {
   --darkcolor: #14171a;
   --bluecolor: #1538d1;
+  --lightcolor: #fff;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
+.theme-data {
+  --darkcolor: #fff;
+  --lightcolor: #000;
+}
+
 body {
   padding: 0;
+  color: white !important;
   background-color: var(--darkcolor);
   background-repeat: no-repeat;
   margin: 0;
@@ -22,21 +31,21 @@ li {
 }
 
 strong {
-  color: white;
+  color: var(--lightcolor);
   font-weight: normal !important;
 }
 
 button {
   cursor: pointer;
   font-family: "Archivo", sans-serif !important;
-
+  color: white !important;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--lightcolor);
   cursor: pointer;
 }
 .menu {
@@ -74,7 +83,12 @@ a {
 }
 
 .navbar_logo {
-  color: white;
+  color: var(--lightcolor);
+}
+
+.navbar_links i {
+  font-size: 20px;
+  color: var(--lightcolor);
 }
 .navbar_row {
   width: 100%;
@@ -97,6 +111,10 @@ a {
   padding: 0 20px;
 }
 
+.navbar-show {
+  display: flex !important;
+}
+
 .p {
   font-size: 15px;
 }
@@ -105,7 +123,7 @@ a {
   width: 100%;
   min-height: 650px;
   background-color: transparent;
-  color: white;
+  color: var(--lightcolor);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,7 +136,7 @@ a {
 .main_container {
   width: 100%;
   min-height: 500px;
-  color: white;
+  color: var(--lightcolor);
   display: flex;
   max-width: calc(1200px - 20px);
   flex-wrap: wrap;
@@ -150,19 +168,19 @@ a {
 
 .cta {
   background-color: var(--bluecolor);
-  color: white;
+  color: var(--lightcolor);
   padding: 15px 20px;
   border: none;
   margin: 30px 0;
 }
 
 .main_box h3 {
-  color: #f5f5f5;
+  color: var(--lightcolor);
   font-weight: normal;
 }
 
 .main_box h1 {
-  color: white;
+  color: var(--lightcolor);
   font-weight: bold;
 }
 
@@ -173,7 +191,7 @@ a {
 .about {
   width: 100%;
   min-height: 700px;
-  color: white;
+  color: var(--lightcolor);
   padding-top: 50px;
   display: flex;
   align-items: center;
@@ -187,7 +205,7 @@ a {
   width: 100%;
   min-height: 600px;
   background-color: transparent;
-  color: white;
+  color: var(--lightcolor);
   display: flex;
   max-width: calc(1200px - 20px);
   text-align: center;
@@ -211,7 +229,7 @@ a {
 
 .about_box .cta {
   background-color: var(--bluecolor);
-  color: white;
+  color: var(--lightcolor);
   padding: 15px 20px;
   border: none;
   margin: 30px 0;
@@ -238,7 +256,7 @@ a {
 .stats {
   width: 100%;
   background-color: var(--bluecolor);
-  color: white;
+  color: var(--lightcolor);
   padding: 20px 0;
   display: flex;
   align-items: center;
@@ -262,7 +280,7 @@ a {
   width: 230px;
   margin: 20px;
   min-height: 100px;
-  color: white;
+  color: var(--lightcolor);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -281,7 +299,7 @@ a {
 }
 .stats_number h2 {
   padding: 0;
-  color: #f5f5f5;
+  color: var(--lightcolor);
   font-weight: normal;
   font-size: 18px;
   margin: 5px;
@@ -290,7 +308,7 @@ a {
 .skills {
   width: 100%;
   background-color: transparent;
-  color: white;
+  color: var(--lightcolor);
   padding: 5px 0;
   min-height: 200px;
   display: flex;
@@ -323,7 +341,7 @@ a {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 
   padding: 5px 0;
-  color: white;
+  color: var(--lightcolor);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -333,7 +351,7 @@ a {
 
 .skills_box i {
   font-size: 40px;
-  color: white;
+  color: var(--lightcolor);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   padding: 0;
   margin: 10px 0;
@@ -353,7 +371,7 @@ a {
   display: flex;
   align-items: center;
   padding: 30px 0;
-  color: white;
+  color: var(--lightcolor);
   flex-direction: row;
   justify-content: center;
 }
@@ -377,7 +395,7 @@ a {
   margin: 50px 0;
   display: flex;
   flex-direction: row;
-  color: white;
+  color: var(--lightcolor);
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -390,7 +408,7 @@ a {
 
 .abilities_box h1 {
   padding: 10px 0;
-  color: white;
+  color: var(--lightcolor);
 }
 .abilities_box p {
   margin: 5px 0;
@@ -407,7 +425,7 @@ a {
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  color: white;
+  color: var(--lightcolor);
 }
 .projects_title {
   padding: 30px 0;
@@ -420,7 +438,7 @@ a {
   margin: 50px 0;
   display: flex;
   flex-direction: row;
-  color: white;
+  color: var(--lightcolor);
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -441,8 +459,8 @@ a {
 
 .project_box p {
   text-align: left;
-  color: #f5f5f5;
   font-weight: light;
+  color: var(--lightcolor);
   padding: 30px 0;
   line-height: 40px;
 }
@@ -490,7 +508,7 @@ a {
   padding: 15px 20px;
   border-radius: 2px;
   border: none;
-  color: white;
+  color: var(--lightcolor);
   margin: 10px 0;
   display: flex;
   align-items: center;
@@ -540,9 +558,9 @@ input {
   min-height: 50px;
   margin: 30px 5px;
   flex-wrap: wrap;
-  color: white;
+  color: var(--lightcolor);
   border: none;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid var(--lightcolor);
   background-color: var(--darkcolor);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
@@ -560,7 +578,7 @@ input {
   padding: 15px 30px;
   margin: 30px 0;
   background-color: var(--bluecolor);
-  color: white;
+  color: var(--lightcolor);
   border: none;
 }
 
@@ -570,7 +588,7 @@ input {
   min-height: 400px;
   display: flex;
   flex-direction: row;
-  color: white;
+  color: var(--lightcolor);
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -603,7 +621,7 @@ input {
   margin: 30px 5px;
   flex-wrap: wrap;
   border: none;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid var(--lightcolor);
   background-color: var(--darkcolor);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
@@ -611,19 +629,19 @@ input {
   width: calc(100% - 40px);
   resize: none;
   min-height: 50px;
-  color: white;
+  color: var(--lightcolor);
   border: none;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   background-color: var(--darkcolor);
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid var(--lightcolor);
 }
 
 textarea::placeholder {
-  color: white;
+  color: var(--lightcolor);
   padding: 0 20px;
 }
 input::placeholder {
-  color: white;
+  color: var(--lightcolor);
   padding: 0 20px;
 }
 
@@ -636,7 +654,7 @@ input::placeholder {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: white;
+  color: var(--lightcolor);
   flex-wrap: wrap;
 }
 
@@ -670,20 +688,19 @@ input::placeholder {
 
 .footer_right i {
   font-size: 20px;
-  color: white;
   padding: 10px;
 }
 
-.footer_right i:nth-child(1) {
-  color: white;
+.footer_right a:nth-child(1) {
+  color: #fff;
 }
-.footer_right i:nth-child(2) {
+.footer_right a:nth-child(2) {
   color: #0072b1;
 }
-.footer_right i:nth-child(3) {
+.footer_right a:nth-child(3) {
   color: #cd486b;
 }
-.footer_right i:nth-child(4) {
+.footer_right a:nth-child(4) {
   color: #1da1f2;
 }
 newyear {
@@ -722,7 +739,8 @@ newyear {
   .menu {
     display: flex;
     cursor: pointer;
-    user-select: none;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
   }
   .navbar_row {
     display: flex !important;
