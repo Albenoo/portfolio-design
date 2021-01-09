@@ -1,17 +1,19 @@
 :root {
   --darkcolor: #14171a;
-  --bluecolor: #1538d1;
+  --unusedcolor: #1538d1;
   --lightcolor: #fff;
-}
+	  --bluecolor: #002ead;
 
-html {
-  scroll-behavior: smooth;
 }
-
 .theme-data {
   --darkcolor: #fff;
   --lightcolor: #000;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+
 
 #toggle {
 	transition: linear 2s;
